@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;200;300&display=swap');
+
+/*font-family: 'Anton', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+html,body{
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+.masthead{
+	background:linear-gradient(rgba(0, 0, 0, 0.70) 100%, rgba(114, 12, 7, 0.3) 50%), url('img/header.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.character-references{
+	background:linear-gradient(rgba(0, 0, 0, 0.70) 100%, rgba(114, 12, 7, 0.3) 50%), url('img/character-references.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.texture{
+	background:url('img/texture.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.4s;
+}
+.navbar .nav-link {
+    color: #fff;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar .navbar-brand {
+    color: #fff;
+}
+.navbar.active {
+    background: #031a1e;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar.active .nav-link {
+    color: #fff;
+}
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar.active .navbar-brand {
+    color: #fff;
+}
+
+/* Font Assists */
+.header-name{
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 72px;
+}
+.title{
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+	font-size: 40px;
+}
+
+/* Buttons */
+.logo{
+	font-family: 'Anton', sans-serif;
+	font-size: 27px;
+    letter-spacing: 4px;
+}
+.view-more{
+	padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+}
+.view-more:hover{
+    border: 2px solid #111111;
+    color: #fff;
+    background: #111111;
+    text-decoration: none;
+    transition: .4s;
+}
+
+/* About */
+.custom-jumbotron {
+  padding: 36px;
+  box-shadow: 3px 2px 16px -5px #888888;
+  height: 100%;
+  background: #fff;
+  border-radius: 1rem;
+}
+table{
+	width: 100%;
+}
+tr,td{
+	width: 200px;
+}
+.space{
+	width: 16px;
+}
+
+/* Professional Skills */
+.skills{
+	padding: 6px;
+	background: #888888;  
+	width: 49%;
+	display: inline-block;
+	cursor: pointer;
+}
+.flip-card {
+  	background-color: transparent;
+  	width: 300px;
+  	height: 300px;
+  	perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color: #031a1e;
+  color: white;
+  transform: rotateY(180deg);
+}
+.skills.flip-card.aos-init.aos-animate {
+    height: 241px;
+}
+
+/* Work Experience */
+.experience-title{
+    background: #031a1e; 
+    color: #fff;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.experience-content{
+    background: #bbb;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.carousel-item{
+	padding: 50px 30px 70px 30px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border-radius: 1rem;
+}
+
+/* Footer */
+.footer-links{
+	font-size: 14px;
+	color: #000;
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
